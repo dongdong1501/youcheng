@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<script type="text/javascript">
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。" 			
+   		});	
+   </script>
+    <script src="js/jquery1.8.3.js"></script>
+    <!--<script src="js/jquery.mobile-1.4.5.min.js"></script>-->
+	<body>
+		<div class="all">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+		<footer>
+			<dl>
+				<dt><img src="img/images/dianpu_41.jpg"/></dt>
+				<dd>首页</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/images/dianpu_43.jpg"/></dt>
+				<dd>优橙协助</dd>
+			</dl>
+			<div><img src="img/images/dianpu_38.jpg"/></div>
+			<dl>
+				<dt><img src="img/images/dianpu_46.jpg"/></dt>
+				<dd>订单状态</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/images/dianpu_49.jpg"/></dt>
+				<dd>我的店铺</dd>
+			</dl>
+		</footer>
+	</body>
+</html>
+<script>
+$(function(){
+	$("footer dl").click(function(){
+		var _index=$(this).index();
+		$(".all>ul").css("left",-_index*100+"%");
+	})
+	$("footer div").click(function(){
+		var _index=$(this).index();
+		$(".all>ul").css("left",-_index*100+"%");
+	})
+	/*$(".all>ul li").on("swipeleft",function(){
+		alert("ddd");
+	})
+	*/
+})
+</script>

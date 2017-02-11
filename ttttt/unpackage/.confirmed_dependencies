@@ -1,0 +1,29 @@
+{
+	"index.html": {
+		"resources": [
+			"img/images/img_43.jpg",
+			"img/images/img_06.jpg",
+			"css/style.css",
+			"img/images/img_41.jpg",
+			"img/images/img_14.jpg",
+			"img/images/img_03.jpg",
+			"img/images/img_33.jpg",
+			"img/images/img_11.jpg",
+			"img/images/img_38.jpg",
+			"img/images/img_31.jpg",
+			"img/images/img_24.jpg",
+			"img/images/img_17.jpg",
+			"img/images/img_19.jpg",
+			"img/images/img_28.jpg",
+			"js/jquery.js",
+			"css/reset.css",
+			"img/images/dianpu_49.jpg",
+			"img/images/dianpu_46.jpg",
+			"img/images/dianpu_41.jpg",
+			"img/images/dianpu_38.jpg",
+			"img/images/dianpu_43.jpg",
+			"js/jquery.mobile-1.4.5.min.js",
+			"js/jquery1.8.3.js"
+		]
+	}
+}

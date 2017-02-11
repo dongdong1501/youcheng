@@ -1,0 +1,97 @@
+@import url(reset.css);
+html，body {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+body .all {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+body .all > ul {
+  width: 500%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  position: absolute;
+}
+body .all > ul li {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  width: 0%;
+}
+body .all > ul > li:nth-child(1) {
+  background: red;
+}
+body .all > ul > li:nth-child(2) {
+  background: yellow;
+}
+body .all > ul > li:nth-child(3) {
+  background: green;
+}
+body .all > ul > li:nth-child(4) {
+  background: pink;
+}
+body .all > ul > li:nth-child(5) {
+  background: orange;
+}
+body footer {
+  width: 100%;
+  height: 5rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-top: 0.1rem solid #d9d9d9;
+}
+body footer dl {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  text-align: center;
+  width: 0%;
+}
+body footer dl dt {
+  width: 100%;
+  height: 3.6rem;
+  background: none;
+  line-height: 3.6rem;
+}
+body footer dl dt img {
+  width: 2.4rem;
+  height: auto;
+  background: none;
+  vertical-align: middle;
+}
+body footer dl dd {
+  width: 100%;
+  height: 1.4rem;
+  background: none;
+  line-height: 1.2rem;
+  color: #a5a5a5;
+}
+body footer div {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  text-align: center;
+  line-height: 5rem;
+  width: 0%;
+}
+body footer div img {
+  width: auto;
+  height: 4rem;
+  background: none;
+  vertical-align: middle;
+}

@@ -1,0 +1,90 @@
+@import url(reset.css);
+.full(@w,@h,@bk){
+    width: @w;
+    height: @h;
+    background: @bk;
+}
+.box(@bx){
+    display: -webkit-box;
+   
+    -webkit-box-orient:@bx;//纵向排列vertical,横向排列horizontal
+}
+.b-f(@bf){
+    -webkit-box-flex: @bf;
+    -moz-box-flex: @bf;
+    box-flex: @bf;
+}
+html，body{
+    .full(100%,100%,none);   
+}
+html{
+    font-size: 62.5%; 
+}
+body{
+    .box(vertical);
+    .all{
+        .b-f(1);
+        overflow: hidden;
+        position: relative;
+        &>ul{
+            .full(500%,100%,none);
+            .box(horizontal);
+            position: absolute;
+            //-webkit-transition-property:left;
+            //-webkit-transition-duration: 0.1s;
+            //-webkit-transition-timing-function: linear;
+            li{
+                .b-f(1);
+                width:0%;
+            }
+            &>li:nth-child(1){
+                background: red;
+            }
+            &>li:nth-child(2){
+                background: yellow;
+            }
+            &>li:nth-child(3){
+                background: green;
+            }
+            &>li:nth-child(4){
+                background: pink;
+            }
+            &>li:nth-child(5){
+                background: orange;
+            }
+        }
+    }
+    footer{
+        .full(100%,5rem,none);
+        .box(horizontal);
+        border-top:0.1rem solid #d9d9d9;
+        dl{
+           .b-f(1);
+           text-align: center; 
+           width: 0%;
+           dt{
+               .full(100%,3.6rem,none);
+               line-height: 3.6rem;
+               img{
+                   .full(2.4rem,auto,none);
+                    vertical-align: middle;
+               }
+           }
+           dd{
+               .full(100%,1.4rem,none);
+               line-height: 1.2rem;
+               color: #a5a5a5;
+           }
+        }
+        div{
+            .b-f(1);
+            text-align: center;
+            line-height: 5rem;
+            width: 0%;
+            img{
+                .full(auto,4rem,none);
+                vertical-align: middle;
+            }
+        }
+    }
+}
